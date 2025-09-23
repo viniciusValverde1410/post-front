@@ -1,0 +1,101 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.title {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.formGroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.input {
+    padding: 0.7rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-right: 1rem;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.input:focus {
+    border: 1.5px solid #f6d365;
+}
+
+.button {
+    padding: 0.7rem 1.5rem;
+    background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(253, 160, 133, 0.15);
+    transition: background 0.2s, transform 0.1s;
+}
+
+.button:disabled {
+    background: #ccc;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.button:not(:disabled):hover {
+    background: linear-gradient(90deg, #fda085 0%, #f6d365 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.commentBox {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    padding: 2rem 2.5rem;
+    margin-top: 1.5rem;
+    min-width: 320px;
+    max-width: 90vw;
+}
+
+.commentTitle {
+    color: #fda085;
+    margin-bottom: 0.5rem;
+}
+
+.commentText {
+    color: #444;
+    font-size: 1.1rem;
+    margin: 0.2rem 0 0.7rem 0;
+}
+
+.errorMsg {
+    background: #ffeaea;
+    border-left: 4px solid #ff6b6b;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    color: #d32f2f;
+    font-weight: 500;
+}
+
+.successMsg {
+    background: #eaffea;
+    border-left: 4px solid #4caf50;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    color: #388e3c;
+    font-weight: 500;
+}
